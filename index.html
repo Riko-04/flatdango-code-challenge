@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Challenge</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- navbar -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flatdango</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <link rel="stylesheet" href="assets/index.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="src/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
     <div class="heading">
+      <div class="item">
         <h2 class="ui header">
-            <i class="orange ticket icon"></i>
-            <div class="content">FLATDANGO</div>
-            <div class="sub header" id="subtitle">BUY MOVIE TICKETS</div>
+          <i class="orange ticket icon"></i>
+          <div class="content">FLATDANGO</div>
+          <div class="sub header" id="subtitle">BUY MOVIE TICKETS</div>
         </h2>
+      </div>
     </div>
 
     <div class="ui centered grid">
-        <!-- Movie list -->
-        <div class="four wide column">
-            <div class="list-container">
-                <ul class="ui divided list" id="films">
-                    <li class="film item">Game of Thrones</li>
-                    <li class="film item">Teen Wolf</li>
-                    <li class="film item">Kong Skull Island</li>
-                    <li class="film item">Furiosa</li>
-                    <li class="film item">Fast and Furious 11</li>
-                    <li class="film item">The Boys</li>
-                    <li class="film item">House of the Dragon</li>
-                    <li class="film item">Parasyte: The Grey</li>
-                    <li class="film item">Heart of the Hunter</li>
-                    <li class="film item">The Incredibles</li>
-                    <li class="film item">She-hulk</li>
-                    <li class="film item">Dawn of the planets of the apes</li>
-                </ul>
-            </div>
+      <!-- Movie list -->
+      <div class="four wide column">
+        <div class="list-container">
+          <ul class="ui divided list" id="films">
+            <!-- Placeholder list items will be added dynamically -->
+          </ul>
         </div>
+      </div>
 
-        <!-- Movie details -->
-        <div class="eight wide column">
-            <div class="movie-details">
-                <img id="poster" src="placeholderImage.png" alt="[MOVIE TITLE]" />
-                <div class="details">
-                    <h2 id="title">Movie Title</h2>
-                    <p id="description">Movie Description</p>
-                    <p id="ticket-num">3 remaining tickets</p>
-                    <button id="buy-ticket" class="ui orange button">Buy Ticket</button>
-                </div>
-            </div>
+      <!-- Movie details -->
+      <div class="eight wide column">
+        <div class="movie-details">
+          <img id="poster" src="assets/placeholderImage.png" alt="[MOVIE TITLE]" />
+          <div class="details">
+            <h2 id="title">Movie Title</h2>
+            <p id="description">Movie Description</p>
+            <p id="ticket-num">3 remaining tickets</p>
+            <button id="buy-ticket" class="ui orange button">Buy Ticket</button>
+          </div>
         </div>
+      </div>
     </div>
-
-    <script src="./script.js"></script>
-</body>
+  </body>
 </html>
